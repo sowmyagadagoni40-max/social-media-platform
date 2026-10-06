@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Login</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<div class="auth-container">
+
+    <h1>SocialConnect</h1>
+
+    <h2>Login</h2>
+
+    <input
+        type="text"
+        id="username"
+        placeholder="Username"
+    >
+
+    <input
+        type="password"
+        id="password"
+        placeholder="Password"
+    >
+
+    <button onclick="login()">
+        Login
+    </button>
+
+    <p>
+        Don't have an account?
+        <a href="register.html">
+            Register
+        </a>
+    </p>
+
+</div>
+
+
+<script>
+
+function login() {
+
+    const username =
+        document.getElementById("username").value;
+
+    const password =
+        document.getElementById("password").value;
+
+    if (username && password) {
+
+        alert("Login successful!");
+
+        window.location.href = "index.html";
+
+    } else {
+
+        alert("Please enter username and password");
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>

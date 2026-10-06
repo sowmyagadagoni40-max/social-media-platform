@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SocialConnect</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>SocialConnect</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="login.html">Login</a>
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="create-post">
+
+        <h2>Create a Post</h2>
+
+        <textarea
+            id="postContent"
+            placeholder="What's on your mind?"
+        ></textarea>
+
+        <button onclick="createPost()">
+            Post
+        </button>
+
+    </section>
+
+
+    <section>
+
+        <h2>Latest Posts</h2>
+
+        <div id="posts"></div>
+
+    </section>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
